@@ -3,7 +3,14 @@
 - 🌱 I’m currently learning html , css, js, python
 - 💞️ I’m looking to collaborate on different projects in progrmmation
 - 📫 How to reach me ...
-le projet utilise un algorithme basé sur celui de GAUSS pour cdeterminer les jours sur lesquels tombent le jour de pâques en connaissant l'année
+ projet 1 :le projet utilise un algorithme basé sur celui de GAUSS pour cdeterminer les jours sur lesquels tombent le jour de pâques en connaissant l'année
+ projet 2 :
+ projet 3 : le projet de sondage est un projet qui laisse le soin a l'utilisateur de choisir lui même les paramètres de son sondage et avec les resultats qu'il aura obtenu de construire un diagramme explicatif
+
+
+
+
+
 <!---
 Jeanpascaletpro1551/Jeanpascaletpro1551 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 You can click the Preview link to take a look at your changes.
