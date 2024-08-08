@@ -1,0 +1,136 @@
+body {
+    font-family: 'Georgia', serif;
+    background: url('babe.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+    position: relative;
+    overflow: hidden; /* Assure que l'animation reste à l'intérieur des limites */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    position: relative;
+    display: inline-block;
+    padding: 5px 10px;
+    transition: color 0.3s ease; /* Transition douce pour la couleur */
+}
+
+nav ul li a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: #ff6b6b; /* Couleur de surbrillance */
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+nav ul li a:hover::before {
+    width: 100%; /* Élargit la ligne */
+    left: 0;
+}
+
+nav ul li a:hover {
+    color: #ff6b6b; /* Change la couleur du texte au survol */
+}
+
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+}
+
+/* Importation de la police d'écriture depuis Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+
+
+h1, h2 {
+    margin: 0;
+    position: relative; /* Nécessaire pour positionner les pseudo-éléments */
+    overflow: hidden; /* Assure que les cœurs ne débordent pas des limites */
+    font-family: 'Playfair Display', serif; /* Police élégante pour les titres */
+}
+
+h1 {
+    font-weight: bold; /* Met le texte en gras */
+    font-size: 3rem; /* Taille du texte */
+    white-space: nowrap; /* Empêche le retour à la ligne */
+    animation: scroll-text 10s linear infinite; /* Animation de défilement du texte */
+}
+
+h2 {
+    font-size: 2rem; /* Taille du texte pour h2 */
+}
+
+@keyframes scroll-text {
+    0% {
+        transform: translateX(100%); /* Commence à droite */
+    }
+    100% {
+        transform: translateX(-100%); /* Défile vers la gauche */
+    }
+}
+
+h1::before, h2::before {
+    content: '❤️'; /* Cœur comme contenu */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0); /* Centrer le cœur et le rendre invisible */
+    font-size: 2rem; /* Taille du cœur */
+    color: #ff6b6b; /* Couleur du cœur */
+    opacity: 0; /* Invisible par défaut */
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Transition douce */
+}
+
+h1:hover::before, h2:hover::before {
+    transform: translate(-50%, -50%) scale(1); /* Afficher le cœur au survol */
+    opacity: 1; /* Rendre le cœur visible */
+}
+
+
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    margin-top: 20px;
+}
